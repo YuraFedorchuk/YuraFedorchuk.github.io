@@ -1,0 +1,41 @@
+/* 
+    Created on : 23-Feb-2016, 00:35:17
+    Author     : Mikhail Dumchev
+*/
+.boundary-module .internal-frame {
+    display: flex;
+    height: 80px;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0px auto;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-image: url("../images/logotype.png");
+}
+.boundary-module .upper-button {
+    display: flex;
+    align-items: center;
+    max-width: 180px;
+    min-height: 40px;
+    margin-right: 20px;
+    padding: 0px 15px;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+.boundary-module .upper-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+.boundary-module .contacts div:first-of-type {
+    margin-right: 10px;
+}
+.boundary-module .contacts p:not(.title) {
+    color: rgb(255, 255, 255);
+}
+.boundary-module .contacts p.title {
+    color: rgb(153, 153, 153);
+}

@@ -1,0 +1,763 @@
+/* 
+    Created on : 16-Mar-2016, 19:59:28
+    Author     : Mikhail Dumchev
+*/
+/*Общие стили (Начало)*/
+*:not(input) {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    cursor: default;
+}
+.boundary-module .contacts div:first-of-type p {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    cursor: text;
+}
+h1, h2, h3, h4, p, a, span, td, th, input, li, img {
+    font-family: Tahoma, Verdana;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.frame {
+    width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.light-line {
+    background-image: url("/images/lines/light-line.png");
+}
+.dark-line {
+    background-image: url("/images/lines/dark-line.png");
+}
+.button {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: rgb(255, 96, 0);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    box-shadow: 0px 3px 0px 0px rgb(191, 72, 0);
+}
+.button:hover {
+    background-color: rgb(198, 75, 0);
+    box-shadow: 0px 3px 0px 0px rgb(137, 52, 0);
+    cursor: pointer;
+}
+.button:active {
+    top: 2px;
+    box-shadow: 0px 1px 0px 0px rgb(137, 52, 0);
+}
+/*Общие стили (Конец)*/
+/*Стили для верхнего блока (Начало)*/
+.upper-module {
+    width: 100%;
+    min-height: 80px;
+    background-color: rgb(255, 96, 0);
+}
+.upper-module .contacts {
+    position: relative;
+    top: 5px;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding: 0px 20px;
+    background-color: rgb(46, 46, 46);
+}
+.upper-module .contacts:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: -9.5px;
+    border: 5px solid transparent; border-left: 5px solid rgb(30, 30, 30); border-top: 5px solid rgb(30, 30, 30);
+}
+.upper-module .contacts:before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: -9.5px;
+    border: 5.5px solid transparent; border-top: 5px solid rgb(30, 30, 30); border-right: 5px solid rgb(30, 30, 30);
+}
+/*Стили для верхнего блока (Конец)*/
+/*Стили для "шапки" сайта (Начало)*/
+header {
+    width: 100%;
+    padding: 30px 0px;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-size: cover;
+    background-image: url("/images/backgrounds/background.png");
+}
+header .additory-module {
+    padding: 15px 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+header .additory-module h1, .additory-module h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+header .additory-module h1 {
+    margin-bottom: 20px;
+    font-size: 31px;
+    font-weight: 500;
+}
+header .additory-module h2 {
+    font-size: 19px;
+    font-weight: 300;
+}
+header .additory-module span {
+    color: rgb(255, 96, 0);
+}
+header .internal-frame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 940px;
+    margin: 30px auto 0px;
+}
+header .internal-frame .video-container {
+    width: 518px;
+}
+header .internal-frame .video-container h3 {
+    padding: 10px 0px;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 96, 0);
+    text-align: center;
+}
+header .internal-frame .video-container iframe {
+    width: 100%;
+    height: 337px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+/*Стили для "шапки" сайта (Конец)*/
+/*Стили для блока "Почему стоит заказать у нас?" (Начало)*/
+.advantages-module {
+    padding: 50px 0px;
+    background-color: rgb(241, 243, 248);
+}
+.advantages-module .internal-frame {
+    display: flex;
+    justify-content: space-between;
+    width: 980px;
+    margin: 0px auto;
+}
+.advantages-module h2 {
+    margin-bottom: 50px; 
+    padding-bottom: 30px;
+    color: rgb(93, 106, 112);
+    font-weight: 300;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-image: url("/images/lines/advantages-line.png");
+}
+.advantages-module .internal-frame p {
+    width: 200px;
+    padding-top: 165px;
+    color: rgb(44, 60, 67);
+    font-weight: 300;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+}
+#conversion {
+    background-image: url("/images/icons/conversion.png");
+}
+#technologies {
+    background-image: url("/images/icons/technologies.png");
+}
+#complexity {
+    background-image: url("/images/icons/complexity.png");
+}
+#clients {
+    background-image: url("/images/icons/clients.png");
+}
+/*Стили для блока "Почему стоит заказать у нас?" (Конец)*/
+/*Стили для блока "АКЦИЯ!" (Начало)*/
+.special-offer {
+    background-color: rgb(94, 130, 154);
+}
+.special-offer .internal-frame {
+    display: flex;
+    justify-content: flex-end;
+    width: 940px;
+    margin: 0px auto;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-image: url("/images/backgrounds/background_1.png");
+}
+.special-offer .internal-frame .internal-container {
+    width: 500px;
+    padding-bottom: 40px;
+    background-color: rgb(105, 139, 162);
+}
+.special-offer .internal-frame .internal-container .timer {
+    display: flex;
+    justify-content: center;
+    min-height: 60px;
+    margin: 70px 0px;
+}
+.special-offer .internal-frame .internal-container .timer div:not(:last-of-type) {
+    margin-right: 20px;
+}
+.special-offer .internal-frame .internal-container .timer div span:not(.title) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 44px;
+    margin-bottom: 6px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(52, 52, 52);
+    border-radius: 5px;
+    border: 1px solid rgb(93, 93, 93);
+}
+.special-offer .internal-frame .internal-container .timer div .title {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.special-offer .internal-frame .internal-container h2 {
+    padding: 22px 0px 26px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    background-color: rgb(70, 108, 133);
+}
+.special-offer .internal-frame .internal-container p:not(.title) {
+    margin-top: 70px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.special-offer .internal-frame .internal-container .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 347px;
+    margin: 0px auto;
+}
+/*Стили для блока "АКЦИЯ!" (Конец)*/
+/*Стили для блока "О нас говорят" (Начало)*/
+.opinions {
+    padding: 50px 0px 70px;
+    background-color: rgb(44, 60, 67);
+}
+.opinions h2 {
+    margin-bottom: 50px; 
+    padding-bottom: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+.opinions .internal-frame {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin: 0px auto;
+}
+.opinions .internal-frame iframe {
+    border: 12px solid rgb(57, 72, 79);
+}
+/*Стили для блока "О нас говорят" (Конец)*/
+.clients {
+    padding: 50px 0px;
+    background-color: rgb(255, 255, 255);
+}
+.clients h2 {
+    margin-bottom: 50px; 
+    padding-bottom: 30px;
+    color: rgb(44, 60, 67);
+    font-weight: 300;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+.clients .internal-frame {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+    margin: 0px auto;
+}
+.clients .internal-frame img {
+    max-height: 140px;
+}
+.clients .internal-frame div {
+    text-align: center;
+}
+.clients .internal-frame div:first-of-type {
+    max-width: 210px;
+    margin-left: 20px;
+}
+.clients .internal-frame div:last-of-type {
+    max-width: 332px;
+}
+.clients .internal-frame div img:first-of-type {
+    margin-bottom: 45px;
+}         
+.examples {
+    padding: 50px 0px;
+    background-color: rgb(241, 243, 248);
+}
+.examples h2 {
+    margin-bottom: 50px; 
+    padding-bottom: 30px;
+    color: rgb(44, 60, 67);
+    font-weight: 300;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    text-align: center;
+}
+.examples h3 {
+    margin-bottom: 60px;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(44, 60, 67);
+    text-align: center;
+}
+.examples .internal-frame {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0px auto;
+}
+.examples .internal-frame div {
+    width: 450px;
+    height: 450px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#apple {
+    background-image: url("/images/backgrounds/apple.png");
+}
+#dolcegabana {
+    background-image: url("/images/backgrounds/dolce_and_gabana.png");
+}
+.examples .internal-frame div span {
+    position: relative;
+    top: 50px;
+    margin-left: -10px;
+    padding: 10px 20px 10px 30px;
+    font-size: 30px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    background-color: rgb(72, 71, 71);
+    z-index: 2;
+}
+.examples .internal-frame div span:before {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 0px;
+    border: 5px solid transparent; border-top: 5px solid rgb(30, 30, 30); border-right: 5px solid rgb(30, 30, 30);
+    z-index: -1;
+}
+.examples .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    margin: 50px auto 0px;
+}
+.working-principles {
+    padding: 50px 0px;
+    background-color: rgb(255, 255, 255);
+}
+.working-principles h2 {
+    margin-bottom: 50px; 
+    padding-bottom: 30px;
+    color: rgb(44, 60, 67);
+    font-weight: 300;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    text-align: center;
+}
+.working-principles .internal-frame {
+    display: flex;
+    justify-content: space-between;
+    width: 980px;
+    margin: 0px auto;
+}
+.working-principles .internal-frame p {
+    padding-top: 110px;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(97, 109, 114);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    text-align: center;
+}
+.working-principles .internal-frame p:nth-child(even) {
+    margin-top: 60px;
+}
+#data {
+    background-image: url("/images/icons/data.png");
+}
+#manager {
+    background-image: url("/images/icons/manager.png");
+}
+#statement-of-work {
+    background-image: url("/images/icons/statement_of_work.png");
+}
+#scenario {
+    background-image: url("/images/icons/scenario.png");
+}
+#advertising-clip {
+    background-image: url("/images/icons/advertising_clip.png");
+}
+#people {
+    background-image: url("/images/icons/people.png");
+}
+.special-offer-with-form {
+    background-color: rgb(94, 130, 154);
+}
+.special-offer-with-form .internal-frame {
+    display: flex;
+    justify-content: flex-end;
+    width: 940px;
+    margin: 0px auto;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-image: url("/images/backgrounds/background_1.png");
+}
+.special-offer-with-form .internal-frame .internal-container {
+    width: 500px;
+    padding-bottom: 15px;
+    background-color: rgb(255, 255, 255);
+}
+.special-offer-with-form .internal-frame .internal-container h2 {
+    padding: 22px 0px 26px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    background-color: rgb(70, 108, 133);
+}
+.special-offer-with-form .internal-frame .internal-container > div {
+    padding: 16px 90px;
+    margin-bottom: 20px;
+    background-color: rgb(70, 88, 96);
+}
+.special-offer-with-form .internal-frame .internal-container h3 {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 26px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.special-offer-with-form .internal-frame .internal-container h3:last-of-type {
+    font-size: 16px;
+}
+.special-offer-with-form .internal-frame .internal-container form {
+    padding: 0px 100px;
+    background-color: rgb(255, 255, 255);
+}
+.special-offer-with-form .internal-frame .internal-container form  p {
+    margin-top: 15px;
+    font-size: 12px;
+    color: rgb(200, 200, 200);
+    text-align: center;
+}
+.special-offer-with-form .internal-frame .internal-container form input[type=text] {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid rgb(70, 88, 96);
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.video-list {
+    padding: 50px 0px;
+    background-color: rgb(241, 243, 248);
+}
+.video-list h2 {
+    margin-bottom: 50px; 
+    padding-bottom: 30px;
+    color: rgb(44, 60, 67);
+    font-weight: 300;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    text-align: center;
+}
+.video-list .internal-frame {
+    display: flex;
+    justify-content: flex-end;
+    width: 940px;
+    margin: 0px auto;
+    padding: 30px 0px;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-image: url("/images/backgrounds/background_2.png");
+}
+.video-list .internal-frame .list {
+    list-style-type: none;
+}
+.video-list .internal-frame .list li {
+    padding-left: 35px;
+    font-size: 25px;
+    font-weight: 300;
+    color: rgb(97, 109, 114);
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-image: url("/images/icons/tick.png");
+}
+.video-list .internal-frame .list li:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+.portfolio {
+    padding: 50px 0px 70px;
+    background-color: rgb(44, 60, 67);
+}
+.portfolio h2 {
+    margin-bottom: 50px; 
+    padding-bottom: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    text-align: center;
+}
+.portfolio .internal-frame {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0px auto;
+}
+.portfolio .internal-frame iframe {
+    width: 450px;
+    height: 315px;
+    border: 10px solid rgb(57, 72, 79);
+    background-color: rgb(0, 0, 0);
+}
+
+.prices {
+    padding: 50px 0px;
+    background-color: rgb(241, 243, 248);
+}
+.prices h2 {
+    margin-bottom: 100px; 
+    padding-bottom: 30px;
+    color: rgb(44, 60, 67);
+    font-weight: 300;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    text-align: center;
+}
+.prices .internal-frame {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1000px;
+    margin: 0px auto;
+}
+.prices .internal-frame .column {
+    width: 320px;
+}
+.prices .internal-frame .column > div {
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 60px;
+}
+.prices .internal-frame .column div .prices-header {
+    padding: 15px 13px;
+}
+.prices .internal-frame .column div .prices-header h3 {
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.prices .internal-frame .column div .prices-header h4 {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.prices .internal-frame .column div .prices-list {
+    padding: 15px 20px 0px;
+    background-color: rgb(255, 255, 255);
+    list-style-type: none;
+}
+.prices .internal-frame .column div .prices-list li {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.prices .internal-frame .column div .prices-list li:not(:last-of-type) {
+    margin-bottom: 6px;
+    border-bottom: 1px solid rgb(231, 234, 237);
+}
+.prices .internal-frame .column div h3.bottom-module {
+    position: relative;
+    top: 20px;
+    left: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 10px;
+    max-width: 260px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 300
+}
+.prices .internal-frame .column div h3.bottom-module:before {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 0px;
+}
+.prices .internal-frame div.standart .prices-list li {
+    color: rgb(94, 130, 154);
+}
+.prices .internal-frame div.standart .prices-header {
+    background-color: rgb(94, 130, 154);
+}
+.prices .internal-frame div.standart h3.bottom-module {
+    background-color: rgb(231, 233, 237);
+    color: rgb(62, 82, 88);
+}
+.prices .internal-frame div.standart h3.bottom-module:before {
+    border: 5px solid transparent;
+    border-top: 5px solid rgb(214, 216, 221); 
+    border-right: 5px solid rgb(214, 216, 221);
+}
+
+.prices .internal-frame div.gold {
+    position: relative;
+}
+.prices .internal-frame div.gold:before {
+    position: absolute;
+    top: -50px;
+    content: "Наиболее популярный!";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px; 
+    background-color: rgb(250, 170, 47);
+    color: rgb(255, 255, 255);
+    font-family: Tahoma, Verdana;
+    font-size: 20px;
+}
+.prices .internal-frame div.gold .prices-list li {
+    color: rgb(44, 60, 67);
+}
+.prices .internal-frame div.gold .prices-header {
+    background-color: rgb(44, 60, 67);
+}
+.prices .internal-frame div.gold h3.bottom-module {
+    background-color: rgb(44, 60, 67);
+    color: rgb(255, 255, 255);
+}
+.prices .internal-frame div.gold h3.bottom-module:before {
+    border: 5px solid transparent;
+    border-top: 5px solid rgb(25, 37, 42);
+    border-right: 5px solid rgb(25, 37, 42);
+}
+
+.prices .internal-frame div.platinum .prices-list li {
+    color: rgb(44, 60, 67);
+}
+.prices .internal-frame div.platinum .prices-header {
+    background-color: rgb(25, 36, 41);
+}
+.prices .internal-frame div.platinum h3.bottom-module {
+    background-color: rgb(231, 233, 237);
+    color: rgb(62, 82, 88);
+}
+.prices .internal-frame div.platinum h3.bottom-module:before {
+    border: 5px solid transparent;
+    border-top: 5px solid rgb(214, 216, 221);
+    border-right: 5px solid rgb(214, 216, 221);
+}
+.prices .internal-frame:last-child {
+    margin-top: 40px;
+}
+.prices .internal-frame .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin: 30px auto 0px;
+}
+.order {
+    padding: 50px 0px;
+    background-image: url("/images/backgrounds/background_3.png");
+    background-size: cover;
+    background-color: rgb(48, 53, 72);
+}
+.order h2 {
+    margin-bottom: 50px; 
+    padding-bottom: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    text-align: center;
+} 
+.order .internal-frame {
+    display: flex;
+    justify-content: space-between;
+    width: 860px;
+    margin: 0px auto;
+}
+.order .internal-frame .description {
+    width: 380px;
+    max-height: 200px;
+    padding: 40px 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.order .internal-frame .description h3 {
+    font-size: 25px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.order .internal-frame .description h3 span {
+    font-weight: 400;
+}
+.order .internal-frame .description h3:first-of-type {
+    margin-bottom: 28px;
+}
+.footer {
+    background-color: rgb(46, 46, 46);
+}
+.footer .contacts {
+    position: relative;
+    top: -5px;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding: 0px 20px;
+    background-color: rgb(39, 39, 39);
+}
+.footer .contacts:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -9px;
+    border: 5px solid transparent; border-right: 5px solid rgb(30, 30, 30); border-bottom: 5px solid rgb(30, 30, 30); 
+}
+.footer .contacts:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -9px;
+    border: 5px solid transparent; border-bottom: 5px solid rgb(30, 30, 30); border-left: 5px solid rgb(30, 30, 30); 
+}

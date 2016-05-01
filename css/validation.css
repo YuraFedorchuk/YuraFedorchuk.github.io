@@ -1,0 +1,38 @@
+div.error {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-image: url("../images/icons/exclamation_note.png");
+    background-size: 100% 100%;
+}
+div.error:hover {
+    cursor: text;
+}
+span.additoryclass {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+form input.error, form textarea.error {
+    border-bottom: 1px solid rgb(237, 28, 36) !important;
+}
+input.error::-webkit-input-placeholder,
+textarea.error::-webkit-input-placeholder {
+    color: rgb(237, 28, 36);
+    opacity: 1;
+}
+input.error::-moz-placeholder,
+textarea.error::-moz-placeholder {
+    color: rgb(237, 28, 36);
+    opacity: 1;
+}
+input.error:-ms-input-placeholder,
+textarea.error:-ms-input-placeholder {
+    color: rgb(237, 28, 36);
+    opacity: 1;
+}
+input.error:-moz-placeholder,
+textarea.error:-moz-placeholder {
+    color: rgb(237, 28, 36);
+    opacity: 1;
+}

@@ -1,0 +1,368 @@
+/* 
+    Created on : 16-Mar-2016, 19:30:58
+    Author     : Mikhail Dumchev
+*/
+.upper-module .internal-frame {
+    align-items: flex-end;
+    justify-content: center;
+    height: 140px;
+    background-position: 50% 15%;
+}
+.boundary-module .upper-button {
+    display: none;
+}
+.upper-module .contacts {
+    top: 10px;
+}
+.boundary-module .contacts div p {
+    font-size: 15px;
+}
+header .additory-module {
+    padding: 15px 0px 20px;
+}
+header .additory-module h1 {
+    width: 90%;
+    margin: 0% auto 20px;
+    font-size: 22px;
+}
+header .additory-module h1 br {
+    display: none;
+}
+header .additory-module h2 {
+    font-size: 15px;
+}
+header .internal-frame {
+    flex-wrap: wrap;
+}
+header .internal-frame .video-container {
+    width: 90%;
+    margin: 0% auto;
+}
+header .internal-frame .video-container iframe {
+    height: 180px;
+}
+header .internal-frame .form {
+    width: 90%;
+    margin: 30px auto 0%;
+}
+.form .form-header h3 {
+    font-size: 15px;
+    white-space: normal;
+}
+.form .form-header h4 {
+    font-size: 12px;
+    white-space: normal;
+}
+.form .form-content input[type="text"] {
+    height: 40px;
+    font-size: 12px;
+}
+.form .form-content input[type="submit"] {
+    height: 50px;
+    font-size: 15px;
+}
+.form .form-content p {
+    font-size: 10px;
+}
+.advantages-module {
+    padding: 40px 0px;
+}
+.advantages-module h2 {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.advantages-module .internal-frame {
+    width: 90%;
+    margin: 0% auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.advantages-module .internal-frame p {
+    width: 45%;
+    padding-top: 125px;
+    font-size: 15px;
+    background-size: auto 110px;
+}
+.advantages-module .internal-frame p:nth-child(odd) {
+    margin-right: 2.5%;
+}
+.advantages-module .internal-frame p:nth-child(even) {
+    margin-left: 2.5%;
+}
+#complexity, #clients {
+    margin-top: 30px;
+}
+.special-offer {
+    background-color: rgb(105, 139, 162);
+}
+.special-offer .internal-frame {
+    width: 100%;
+    margin: 0% auto;
+    background-image: none;
+}
+.special-offer .internal-frame .internal-container h2 {
+    padding: 18px 0px 22px;
+    font-size: 18px;
+}
+.special-offer .internal-frame .internal-container {
+    width: 100%;
+}
+.special-offer .internal-frame .internal-container p:not(.title) {
+    width: 90%;
+    margin: 40px auto 0px;
+    font-size: 18px;
+}
+.special-offer .internal-frame .internal-container .timer {
+    margin: 50px auto;
+}
+.special-offer .internal-frame .internal-container .button {
+    width: 90%;
+    height: 50px;
+    font-size: 15px;
+}
+.opinions {
+    padding: 40px 0px;
+}
+.opinions h2 {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.opinions .internal-frame {
+    width: 90%;
+    margin: 0% auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.opinions .internal-frame iframe {
+    width: 90%;
+}
+.opinions .internal-frame iframe:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+.clients {
+    padding: 40px 0px;
+}
+.clients h2 {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.clients .internal-frame {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.clients .internal-frame > img:first-of-type {
+    margin-right: 10%;
+}
+.clients .internal-frame div:first-of-type {
+    margin: 30px auto;
+}
+.clients .internal-frame div:last-of-type {
+    max-width: 100%;
+}
+.clients .internal-frame div img:first-of-type {
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+.examples {
+    padding: 40px 0px;
+}
+.examples h2 {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.examples h3 {
+    width: 90%;
+    margin: 0% auto 40px;
+    font-size: 15px;
+}
+.examples .internal-frame {
+    width: 90%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.examples .internal-frame div {
+    width: 100%;
+    height: 300px;
+    background-size: 100% auto;
+}
+.examples .internal-frame div:not(:last-child) {
+    margin-bottom: 30px;
+}
+.examples .internal-frame div span {
+    font-size: 18px;
+}
+.examples .button {
+    height: 50px;
+    margin: 30px auto 0px;
+    font-size: 15px;
+}
+.working-principles {
+    padding: 40px 0px;
+}
+.working-principles h2 {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.working-principles .internal-frame {
+    width: 90%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.working-principles .internal-frame p {
+    width: 45%;
+    font-size: 13px;
+    background-size: 90px auto;
+}
+.working-principles .internal-frame p:nth-child(even) {
+    margin-top: 0%;
+    margin-left: 2.5%;
+}
+.working-principles .internal-frame p:nth-child(odd) {
+    margin-right: 2.5%;
+}
+#statement-of-work, #scenario {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.special-offer-with-form .internal-frame {
+    width: 90%;
+    margin: 0px auto;
+}
+.special-offer-with-form .internal-frame .internal-container {
+    width: 100%;
+    padding-bottom: 0px;
+}
+.special-offer-with-form .internal-frame .internal-container h2 {
+    padding: 18px 0px 22px;
+    font-size: 18px;
+}
+.special-offer-with-form .internal-frame .internal-container > div {
+    padding: 15px 20px;
+    margin-bottom: 0px;
+}
+.special-offer-with-form .internal-frame .internal-container h3 {
+    font-size: 15px;
+}
+.special-offer-with-form .internal-frame .internal-container h3:last-of-type {
+    font-size: 12px;
+}
+.special-offer-with-form .internal-frame .internal-container form {
+    padding: 15px 20px;
+}
+.special-offer-with-form .internal-frame .internal-container form input[type="text"] {
+    font-size: 12px;
+}
+.special-offer-with-form .internal-frame .internal-container form .button {
+    height: 50px;
+    font-size: 15px;
+}
+.special-offer-with-form .internal-frame .internal-container form p {
+    font-size: 10px;
+}
+.video-list {
+    padding: 40px 0px;
+}
+.video-list h2 {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.video-list .internal-frame {
+    width: 90%;
+    margin: 0% auto;
+    padding: 0px;
+    justify-content: center;
+    background-image: none;
+}
+.video-list .internal-frame .list li {
+    padding-left: 25px;
+    font-size: 15px;
+    background-size: auto 90%;
+}
+.portfolio {
+    padding: 40px 0px;
+}
+.portfolio h2 {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.portfolio .internal-frame {
+    width: 90%;
+    margin: 0px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portfolio .internal-frame iframe {
+    width: 90%;
+    height: 150px;
+}
+.portfolio .internal-frame iframe:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+.prices {
+    padding: 40px 0px;
+}
+.prices h2 {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.prices .internal-frame {
+    width: 90%;
+    justify-content: center;
+    margin: 0px auto;
+    flex-wrap: wrap;
+}
+.prices .internal-frame .column:nth-child(2) {
+    margin-top: 90px;
+}
+.prices .internal-frame .column:nth-child(3) {
+    margin-top: 40px;
+}
+.prices .internal-frame .column div .prices-header h3 {
+    font-size: 18px;
+}
+.prices .internal-frame .column div .prices-header h4 {
+    font-size: 12px;
+}
+.prices .internal-frame .column div .prices-list li {
+    font-size: 12px;
+}
+.prices .internal-frame .column div h3.bottom-module {
+    font-size: 18px;
+}
+.prices .internal-frame .button {
+    height: 50px;
+    font-size: 15px;
+}
+.order {
+    padding: 40px 0px;
+}
+.order h2 {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.order .internal-frame {
+    width: 90%;
+    margin: 0% auto;
+    flex-wrap: wrap;
+}
+.order .internal-frame .description {
+    width: 100%;
+    padding: 20px 10px;
+    margin-bottom: 30px;
+}
+.order .internal-frame .description h3 {
+    font-size: 18px;
+}
+.order .internal-frame .description h3:first-of-type {
+    margin-bottom: 18px;
+}
+.footer .internal-frame {
+    align-items: unset;
+    height: 150px;
+    background-position: 50% 85%;
+}
+.footer .contacts {
+    top: -10px;
+    margin: 0px auto;
+}

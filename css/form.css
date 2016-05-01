@@ -1,0 +1,46 @@
+/* 
+    Created on : 23-Feb-2016, 00:23:07
+    Author     : Mikhail Dumchev
+*/
+.form {
+    position: relative;
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+}
+.form .form-header {
+    padding: 15px 20px;
+    background-color: rgb(70, 88, 96);
+}
+.form .form-header * {
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.form .form-header h3 {
+    font-size: 19px;
+    margin-bottom: 16px;
+}
+.form .form-header h4 {
+    font-size: 14.5px;
+}
+.form .form-content {
+    padding: 15px 20px;
+}
+.form .form-content input[type=text] {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid rgb(70, 88, 96);
+    font-size: 15px;
+}
+.form .form-content input[type=text] {
+    margin-bottom: 20px;
+}
+.form .form-content p {
+    margin-top: 15px;
+    font-size: 12px;
+    color: rgb(200, 200, 200);
+    text-align: center;
+}
