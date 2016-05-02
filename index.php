@@ -2,8 +2,9 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>FayVideo</title>
+        <title>Продающее видео</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/icons/fayvideo.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/modal-window.css">
         <link rel="stylesheet" href="css/form.css">
         <link rel="stylesheet" href="css/boundary-module.css">
@@ -44,7 +45,7 @@
                     <div class="internal-container">
                         <h2>АКЦИЯ!</h2>
                         <div>
-                            <p>Сделайте заказ до того, как таймер покажет <br> 00:00:00, и получите бесплатный аудит лендинга:</p>
+                            <p>Сделайте заказ до того, как таймер покажет 00:00:00, и получите ценный бонус <br> по привлечению клиентов:</p>
                             <div class="timer">
                                 <div>
                                     <span class="days"></span>
@@ -95,7 +96,7 @@
                 <h3>Видеопрезентации используют такие гиганты:</h3>
                 <div class="internal-frame">
                     <div id="apple"><span>Apple</span></div>
-                    <div id="dolcegabana"><span>DOLCE&GABANA</span></div>
+                    <div id="dolcegabana"><span>Dolce&Gabbana</span></div>
                 </div>
                 <span class="button modal-window-caller">ЗАКАЗАТЬ ВИДЕО</span>
             </div>
@@ -116,13 +117,13 @@
                         <h2>АКЦИЯ!</h2>
                         <div>
                             <h3>Заполните форму сейчас</h3>
-                            <h3>и получите <span>бесплатный аудит лендинга:</span></h3>
+                            <h3>и получите <span>ценный бонус по привлечению клиентов:</span></h3>
                         </div>
                         <form class="request-caller" onsubmit="return false;">
                             <input type="text" name="name" placeholder="Введите Ваше имя">
                             <input type="text" name="email" placeholder="Введите Ваш E-mail">
                             <input type="text" name="phone_number" placeholder="Введите Ваш телефон">
-                            <input type="submit" value="ОТПРАВИТЬ" class="button">
+                            <input type="submit" value="ЗАКАЖИТЕ" class="button">
                             <p>Мы гарантируем Вашу конфиденциальность</p>
                         </form>
                     </div>
@@ -172,7 +173,7 @@
                             </ul>
                             <h3 class="bottom-module">18000р (5990грн) минута</h3>
                         </div>
-                        <span class="button modal-window-caller">ЗАКАЗАТЬ ВИДЕО</span>
+                        <span class="button modal-window-caller">ПОЛУЧИТЬ ВИДЕО</span>
                     </div>
                     <div class="column">
                         <div class="gold">
@@ -196,7 +197,7 @@
                             </ul>
                             <h3 class="bottom-module">25000р (8290грн) минута</h3>
                         </div>
-                        <span class="button modal-window-caller">ЗАКАЗАТЬ ВИДЕО</span>
+                        <span class="button modal-window-caller">ПОЛУЧИТЬ ВИДЕО</span>
                     </div>
                     <div class="column">
                         <div class="platinum">
@@ -223,7 +224,7 @@
                             </ul>
                             <h3 class="bottom-module">36000р (11900грн) минута</h3>
                         </div>
-                        <span class="button modal-window-caller">ЗАКАЗАТЬ ВИДЕО</span>
+                        <span class="button modal-window-caller">ПОЛУЧИТЬ ВИДЕО</span>
                     </div>
                 </div>
             </div>
@@ -232,7 +233,7 @@
                 <div class="internal-frame">
                     <div class="description">
                         <h3>Заполняйте форму справа прямо сейчас и получите <span>бесплатную консультацию</span></h3>
-                        <h3>А также ценный бонус по привличению клиентов!</h3>
+                        <h3>А также ценный бонус по привлечению клиентов!</h3>
                     </div>
                     <?php include './form.php'; ?>
                 </div>

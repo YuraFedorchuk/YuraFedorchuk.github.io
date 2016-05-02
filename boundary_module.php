@@ -1,5 +1,5 @@
 <div class="internal-frame">
-    <span class="upper-button modal-window-caller">Перезвоните мне!</span>
+    <span class="upper-button modal-window-caller">Мы перезвоним!</span>
     <div class="contacts">
         <div>
             <p>+38 (066) 825-24-98</p>
